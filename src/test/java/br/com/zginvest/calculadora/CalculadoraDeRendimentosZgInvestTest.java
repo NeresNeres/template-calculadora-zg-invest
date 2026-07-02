@@ -18,13 +18,13 @@ class CalculadoraDeRendimentosZgInvestTest {
 	@BeforeEach
 	void montarCarteiraAbcd3() {
 		List<Negociacao> negociacoes = List.of(
-				new Negociacao(LocalDate.of(2020, 3, 1), TipoOperacao.COMPRA, 20, new BigDecimal("8")),
-				new Negociacao(LocalDate.of(2020, 4, 1), TipoOperacao.COMPRA, 10, new BigDecimal("9")),
-				new Negociacao(LocalDate.of(2020, 4, 3), TipoOperacao.VENDA, 5, new BigDecimal("8.5")),
-				new Negociacao(LocalDate.of(2020, 4, 6), TipoOperacao.VENDA, 5, new BigDecimal("9")),
-				new Negociacao(LocalDate.of(2020, 4, 4), TipoOperacao.VENDA, 5, new BigDecimal("9.5")),
-				new Negociacao(LocalDate.of(2020, 4, 5), TipoOperacao.COMPRA, 20, new BigDecimal("11")),
-				new Negociacao(LocalDate.of(2020, 4, 6), TipoOperacao.VENDA, 20, new BigDecimal("8"))
+				new Negociacao(LocalDate.of(2020, 3, 1), OperacaoNegociacao.COMPRA, 20, new BigDecimal("8")),
+				new Negociacao(LocalDate.of(2020, 4, 1), OperacaoNegociacao.COMPRA, 10, new BigDecimal("9")),
+				new Negociacao(LocalDate.of(2020, 4, 3), OperacaoNegociacao.VENDA, 5, new BigDecimal("8.5")),
+				new Negociacao(LocalDate.of(2020, 4, 6), OperacaoNegociacao.VENDA, 5, new BigDecimal("9")),
+				new Negociacao(LocalDate.of(2020, 4, 4), OperacaoNegociacao.VENDA, 5, new BigDecimal("9.5")),
+				new Negociacao(LocalDate.of(2020, 4, 5), OperacaoNegociacao.COMPRA, 20, new BigDecimal("11")),
+				new Negociacao(LocalDate.of(2020, 4, 6), OperacaoNegociacao.VENDA, 20, new BigDecimal("8"))
 		);
 
 		Map<LocalDate, BigDecimal> precosFechamento = Map.of(

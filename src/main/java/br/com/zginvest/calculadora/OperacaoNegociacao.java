@@ -1,6 +1,6 @@
 package br.com.zginvest.calculadora;
 
-public enum TipoOperacao {
+public enum OperacaoNegociacao {
 	COMPRA,
 	VENDA
 }
